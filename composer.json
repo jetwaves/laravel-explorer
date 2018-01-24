@@ -1,0 +1,21 @@
+{
+    "name": "jetwaves/laravel-explorer",
+    "description": "Groups folder and file locations of Laravel projects (eg. to facilitate code snippets insertion)",
+    "keywords": ["framework", "laravel","locate","directory","folder","file","edit","modify","location"],
+    "type": "sdk",
+    "require": {},
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jetwaves",
+            "email": "jetwaves@qq.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Jetwaves\\LaravelDir\\": "src/"
+        }
+    }
+
+}
