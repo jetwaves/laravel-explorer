@@ -49,12 +49,20 @@ class LaravelDirUtil55
         return implode(self::getDirSeperator(),[self::getAppRoot(),'app']);
     }
 
+    public static function getConfigPath(){
+        return implode(self::getDirSeperator(),[self::getAppRoot(),'config']);
+    }
+
     public static function getControllerPath(){
         return implode(self::getDirSeperator(),[self::getAppRoot(),'app','Http','Controllers']); // 控制器目录
     }
 
     public static function getModelPath(){
         return implode(self::getDirSeperator(),[self::getAppRoot(),'app','Models']);                  // 模型目录
+    }
+
+    public static function getMiddlewarePath(){
+        return implode(self::getDirSeperator(),[self::getAppRoot(),'app','Http', 'Middleware']);      // 中间件目录
     }
 
     public static function getTransformerPath(){
